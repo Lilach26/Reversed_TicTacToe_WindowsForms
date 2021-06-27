@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05.ReversedTicTacToe.Logic", "Ex05.ReversedTicTacToe.Logic\Ex05.ReversedTicTacToe.Logic.csproj", "{61B7EB25-911C-4562-8D1A-3456CF6F73A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05.ReversedTicTacToe.UI", "Ex05.ReversedTicTacToe.UI\Ex05.ReversedTicTacToe.UI.csproj", "{F76E171A-BB3C-4CA8-A8F6-44C4F58263E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50FDD759-9EE8-46E5-964D-A8D453F71CFF}"
+	ProjectSection(SolutionItems) = preProject
+		B21 Ex05 Lilach 313588352 Sapir 311342794.txt = B21 Ex05 Lilach 313588352 Sapir 311342794.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61B7EB25-911C-4562-8D1A-3456CF6F73A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B7EB25-911C-4562-8D1A-3456CF6F73A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B7EB25-911C-4562-8D1A-3456CF6F73A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B7EB25-911C-4562-8D1A-3456CF6F73A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76E171A-BB3C-4CA8-A8F6-44C4F58263E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76E171A-BB3C-4CA8-A8F6-44C4F58263E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76E171A-BB3C-4CA8-A8F6-44C4F58263E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76E171A-BB3C-4CA8-A8F6-44C4F58263E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0421AE37-9276-45FE-AEF1-B4611DCEA946}
+	EndGlobalSection
+EndGlobal
