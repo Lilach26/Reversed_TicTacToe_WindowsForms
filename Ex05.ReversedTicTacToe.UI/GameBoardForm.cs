@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Drawing;
 using System.Threading;
@@ -30,7 +30,6 @@ namespace Ex05.ReversedTicTacToe.UI
 
                 Player playerOne = new Player(r_GameSettingsForm.PlayerOneName, GameBoard.eSymbols.SymbolX);
                 Player playerTwo = new Player(r_GameSettingsForm.PlayerTwoName, GameBoard.eSymbols.SymbolO);
-
                 r_ManageGame = new ManageGame(playerOne, playerTwo);
 
                 r_ManageGame.SetNewBoard(r_Rows, r_Cols);
@@ -46,9 +45,8 @@ namespace Ex05.ReversedTicTacToe.UI
 
         private void createBoard()
         {
-            int buttonWidth = 70, buttonHeight = 65, width = 0, buttonsSpace = 10;
-            int xSpace = buttonsSpace, ySpace = buttonsSpace;
-            int labelPlayerOneX;
+            int buttonWidth = 70, buttonHeight = 70, width = 0, buttonsSpace = 10;
+            int xSpace = buttonsSpace, ySpace = buttonsSpace, labelPlayerOneX = 0;
 
             for (int i = 0; i < r_Rows; i++)
             {
@@ -69,10 +67,8 @@ namespace Ex05.ReversedTicTacToe.UI
                 xSpace = buttonsSpace;
             }
 
-            labelPlayerOneX = r_BoardButtons[0, (r_Cols - 1) / 2].Location.X;
-            labelPlayerOneX -= buttonWidth / 2;
-
             Size = new Size(width + (buttonsSpace * 2), ySpace + buttonHeight + 10);
+            labelPlayerOneX = r_BoardButtons[0, (r_Cols - 1) / 2].Location.X - (buttonWidth / 2);
 
             playerOneScoreLabel.Location = new Point(labelPlayerOneX, ClientSize.Height - playerOneScoreLabel.Height);
             playerTwoScoreLabel.Location = new Point(playerOneScoreLabel.Location.X + playerOneScoreLabel.Width + 20, ClientSize.Height - playerTwoScoreLabel.Height);
@@ -146,7 +142,7 @@ namespace Ex05.ReversedTicTacToe.UI
         {
             StringBuilder result = new StringBuilder();
 
-            switch(i_GameResult)
+            switch (i_GameResult)
             {
                 case "A Win!":
                     result.Append("The Winner is: ").AppendFormat("{0}", r_ManageGame.CurrentPlayer == r_ManageGame.PlayerOne ? r_ManageGame.PlayerTwo.PlayerName : r_ManageGame.PlayerOne.PlayerName).AppendLine();
